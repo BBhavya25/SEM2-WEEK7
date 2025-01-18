@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Note-taking App</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <h1>Note-taking App</h1>
+  
+  <!-- Signup Form -->
+  <div id="signup-form">
+    <h2>Signup</h2>
+    <input type="text" id="signupUsername" placeholder="Username" required>
+    <input type="email" id="signupEmail" placeholder="Email" required>
+    <input type="password" id="signupPassword" placeholder="Password" required>
+    <button onclick="signup()">Signup</button>
+  </div>
+
+<!--  
+  <div id="login-form">
+    <h2>Login</h2>
+    <input type="email" id="loginEmail" placeholder="Email" required>
+    <input type="password" id="loginPassword" placeholder="Password" required>
+    <button onclick="login()">Login</button>
+  </div> -->
+
+  <!-- Create Note (Protected Route) -->
+    <h2>Create Note</h2>
+    <textarea id="noteContent" placeholder="Write your note here" required></textarea><br>
+    <button onclick="createNote()">Create Note</button>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
